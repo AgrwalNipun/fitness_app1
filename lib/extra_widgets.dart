@@ -16,46 +16,61 @@ import 'package:percent_indicator/linear_percent_indicator.dart';
       );
   @override
   Widget build(BuildContext context) {
-    return  Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,     
-     children: [
-      CircularPercentIndicator(
-        radius: 40,
-        percent: 0.4,
-        lineWidth: 10,
-        center:Text("Water")
-        //Icon(Icons.liquor),
-      ),   
-     Column(
-      crossAxisAlignment: CrossAxisAlignment.end,
+    return  Container(
+      margin: EdgeInsets.fromLTRB(10,0,10,10),
+      padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Colors.blue.shade50,
+        border: Border.all(width: 2),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,     
        children: [
-         LinearPercentIndicator(
-          width : 200,
-          percent : 0.50,
-          lineHeight: 10,
-          leading: Text('Protien'),
-         ),
-         SizedBox(
-          height: 10,
-         ),
-         LinearPercentIndicator(
-          width : 200,
-          percent : 0.30,
-          lineHeight: 10,
-          leading: Text("Carbs"),
-         ),
-          SizedBox(
-          height: 10,
-         ),
-         LinearPercentIndicator(
-          width : 200,
-          percent : 0.70,
-          lineHeight: 10,
-          leading: Text("Fibers"),
-         ),
-       ],
-     )
-    ],);
+        CircularPercentIndicator(
+          radius: 40,
+          percent: 0.4,
+          lineWidth: 10,
+          center:Text("Water"),
+          progressColor: Colors.blue.shade700,
+          //Icon(Icons.liquor),
+        ),   
+       Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
+         children: [
+           LinearPercentIndicator(
+            width : 200,
+            percent : 0.50,
+            lineHeight: 10,
+            leading: Text('Protien'),
+            trailing: Text("70%",)
+           ),
+           SizedBox(
+            height: 10,
+           ),
+           LinearPercentIndicator(
+            width : 200,
+            percent : 0.30,
+            lineHeight: 10,
+            leading: Text("Carbs"),
+            progressColor: Colors.amber,
+            trailing: Text("70%",)
+           ),
+            SizedBox(
+            height: 10,
+           ),
+           LinearPercentIndicator(
+            width : 200,
+            percent : 0.70,
+            lineHeight: 10,
+            leading: Text("Fibers"),
+            progressColor: Colors.green,
+            trailing: Text("70%",)
+           ),
+         ],
+       )
+      ],),
+    );
   }
   
   

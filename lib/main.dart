@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          backgroundColor: const Color.fromARGB(255, 137, 178, 250),
+          selectedLabelStyle: TextStyle(color:Colors.white,fontWeight: FontWeight.bold),
+          unselectedLabelStyle: TextStyle(color:Colors.white),
+        )
       ),
       home: const HomePage(),
     );
