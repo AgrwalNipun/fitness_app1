@@ -12,7 +12,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(182, 129, 193, 243),
+      extendBodyBehindAppBar: true,
+      backgroundColor: const Color(0xFFE0E0E0),
 
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
@@ -24,8 +25,12 @@ class _HomePageState extends State<HomePage> {
       unselectedItemColor:Colors.white,
       ),
 
-      appBar: AppBar(leading: Icon(Icons.directions_walk,size: 28,),
-      title: Text("Fittr",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFFE0E0E0),
+        leading: Icon(Icons.directions_walk,size: 28,),
+        title: Text("Fittr",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+        elevation: 0,
+      
       ),
 
 
@@ -34,11 +39,16 @@ class _HomePageState extends State<HomePage> {
         child:Column(
           crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Padding(
+              //   padding: const EdgeInsets.all(15.0),
+              //   child: Text("Your Macros : ",textAlign: TextAlign.left,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+              // ),
+              food_chart(),
               Padding(
                 padding: const EdgeInsets.all(15.0),
-                child: Text("Your Macros : ",textAlign: TextAlign.left,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                child:Text("Let's Start Your Workout !",textAlign: TextAlign.left,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
               ),
-              food_chart(),
+              SelectExercise(),
             ],
           )
         

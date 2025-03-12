@@ -1,3 +1,4 @@
+import 'package:fitness_app/services_firebase/login_page.dart';
 import 'package:flutter/material.dart';
 import 'homepage.dart';
 
@@ -18,8 +19,9 @@ class MyApp extends StatelessWidget {
           selectedLabelStyle: TextStyle(color:Colors.white,fontWeight: FontWeight.bold),
           unselectedLabelStyle: TextStyle(color:Colors.white),
         )
+      
       ),
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }

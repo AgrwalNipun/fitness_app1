@@ -11,13 +11,15 @@ import 'package:percent_indicator/linear_percent_indicator.dart';
 }
 
     class _food_chartState extends State<food_chart> {
+
+
       LineChartData food_data = LineChartData(
         lineBarsData: [LineChartBarData()]
       );
   @override
   Widget build(BuildContext context) {
     return  Container(
-      margin: EdgeInsets.fromLTRB(10,0,10,10),
+      margin: EdgeInsets.fromLTRB(10,10,10,10),
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Colors.blue.shade50,
@@ -75,3 +77,51 @@ import 'package:percent_indicator/linear_percent_indicator.dart';
   
   
 }
+
+class SelectExercise extends StatefulWidget {
+  const SelectExercise({super.key});
+
+  @override
+  State<SelectExercise> createState() => _SelectExerciseState();
+}
+
+class _SelectExerciseState extends State<SelectExercise> {
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: GridView.builder(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+        ),
+
+        itemCount: 10,
+        itemBuilder: (context, index) => 
+         Container(
+          margin: EdgeInsets.fromLTRB(10, 10,10,0),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [
+              
+                  Color(0xFF00BFFF), // Pinkish color from the image 00BFFF
+                  Color(0xFFF5F5F5),
+            ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomLeft,
+              ),
+            // color: Colors.white,
+            borderRadius: BorderRadius.circular(15)),
+          child: TextButton(
+            onPressed: (){
+              print("$index");
+            },
+            style: ButtonStyle(splashFactory: NoSplash.splashFactory),
+            child: Text('$index')),)
+
+        ,
+        
+        
+      ),
+    );
+  }
+}
+
+
+
