@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        primaryColor: Color.fromRGBO(171, 139, 109, 1),
+        
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: const Color.fromARGB(255, 137, 178, 250),
           selectedLabelStyle: TextStyle(color:Colors.white,fontWeight: FontWeight.bold),
