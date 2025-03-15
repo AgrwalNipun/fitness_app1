@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   fl_chart: ^0.70.2
   percent_indicator: ^4.2.4
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
 
 dev_dependencies:
   flutter_test:

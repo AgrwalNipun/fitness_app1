@@ -1,3 +1,5 @@
+import 'package:fitness_app/homepage.dart';
+import 'package:fitness_app/services_firebase/functions.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -8,8 +10,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
               borderRadius: BorderRadius.circular(10)
             ),
             child: TextField(
-              controller: nameController,
+              controller: emailController,
               decoration: InputDecoration(
                 border: InputBorder.none
               ),
@@ -40,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
               borderRadius: BorderRadius.circular(10)
             ),
             child: TextField(
-              controller: emailController,
+              controller: passwordController,
               decoration: InputDecoration(
                 border: InputBorder.none
               ),
@@ -55,7 +57,13 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.circular(20)
 ),
                 child :  TextButton(
-              onPressed: (){}, 
+              onPressed: (){
+                signUpWithMAilAndPassword(emailController.text.trim(),passwordController.text.trim());
+                print("!!!!!!!!!User added!!!!!!!!");
+                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: 
+                (context)=>HomePage()
+                ));
+              }, 
               child:Center(child: Text("Sign UP!",style: TextStyle(
                   color : Color.fromRGBO(15, 13, 9,1)
                 ),),),
