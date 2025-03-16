@@ -15,23 +15,17 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-          stops: [0.1, 0.5, 0.7, 0.9],
-          colors: [
-            Colors.yellow.shade800,
-              Colors.yellow.shade700,
-            Colors.yellow.shade600,
-           Colors.yellow.shade500, 
-          
-          ],
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      extendBodyBehindAppBar: true,
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('lib/assets/images/login_bg3.jpg'),
+            fit: BoxFit.fitHeight
+          )
         ),
-      ),
-      child: Scaffold(
-        body: SafeArea(child: Center(
+        child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: 
@@ -39,44 +33,55 @@ class _LoginPageState extends State<LoginPage> {
               Expanded(
                 flex : 1,
                 child: SizedBox(),),
-      
-              Icon(Icons.directions_walk,size: 40,),
+            
+              Icon(Icons.directions_walk,size: 40,color: Colors.white,),
             Expanded(
               flex : 2,
               child: Column(
                 children: [
                   Text("FITTR.",
-                  style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,),
+                  style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,color: Colors.white),
                   ),
-                  Text("Get Fitter\nEveryday",style: TextStyle(fontWeight: FontWeight.w600),),
+                  Text("Get Fitter\nEveryday",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.white),),
                 ],
               ),),
+            Expanded(
+              flex:3,
+              child:SizedBox()),
+              Text("Sign UP or Log In to access FITTR.",style: TextStyle(color: Colors.white),), 
             
-              Text("Enter Your Email"),
+            Expanded(
+              flex:1,
+              child:SizedBox()),  
+            Text("Enter Your Email",style: TextStyle(color: Colors.white),),
             Container(
               width:MediaQuery.of(context).size.width/2,
               decoration: BoxDecoration(
-                border: Border.all(),
+                border: Border.all(color: Colors.white),
                 borderRadius: BorderRadius.circular(10)
               ),
-      
+            
               child: TextField(
+                style: TextStyle(color: Colors.white),
                 controller: emailController,
+                cursorColor: Colors.white,
                 decoration: InputDecoration(
-                  border: InputBorder.none
+                  border: InputBorder.none,
                 ),
+
               )),
-      SizedBox(
+            SizedBox(
               height: 20,
             ) ,            
-            Text("Enter Your Password"),
+            Text("Enter Your Password",style: TextStyle(color: Colors.white),),
             Container(
               width:MediaQuery.of(context).size.width/2,
               decoration: BoxDecoration(
-                border: Border.all(),
+                border: Border.all(color: Colors.white),
                 borderRadius: BorderRadius.circular(10)
               ),
               child: TextField(
+                style: TextStyle(color: Colors.white),
                 controller: passwordController,
                 decoration: InputDecoration(
                   border: InputBorder.none
@@ -94,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                       
                       color: Color.fromRGBO(171 , 139, 109, 1),
                       borderRadius: BorderRadius.circular(20)
-      ),
+            ),
                   child :  TextButton(
                 onPressed: (){
                   signUpWithMAilAndPassword(emailController.text.trim(),passwordController.text.trim());
@@ -106,16 +111,16 @@ class _LoginPageState extends State<LoginPage> {
                 child:Center(child: Text("Sign UP!",style: TextStyle(
                     color : Color.fromRGBO(15, 13, 9,1)
                   ),),),
-      
-      
-      
+            
+            
+            
                 ),
-      
+            
                ),
                SizedBox(
               height: 10,
             ) ,
-            Text("Already Signed Up? Log In.",),
+            Text("Already Signed Up? Log In.",style: TextStyle(color: Colors.white),),
             Expanded(
               flex : 2,
               child : SizedBox()
@@ -123,7 +128,7 @@ class _LoginPageState extends State<LoginPage> {
             ],
           
           ),
-        )),
+        ),
       ),
     );
   }
