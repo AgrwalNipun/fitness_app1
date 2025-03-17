@@ -105,7 +105,6 @@ class _LoginPageState extends State<LoginPage> {
                   if(emailController.text.isEmpty||passwordController.text.isEmpty){
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        
                         backgroundColor: Colors.black,
                         content: Text("!!!!Add Email and Password!!!!")
                       )
