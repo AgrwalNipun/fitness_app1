@@ -102,11 +102,23 @@ class _LoginPageState extends State<LoginPage> {
             ),
                   child :  TextButton(
                 onPressed: (){
+                  if(emailController.text.isEmpty||passwordController.text.isEmpty){
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        
+                        backgroundColor: Colors.black,
+                        content: Text("!!!!Add Email and Password!!!!")
+                      )
+                    );
+                  }
+                  else{
                   signUpWithMAilAndPassword(emailController.text.trim(),passwordController.text.trim());
                   print("!!!!!!!!!User added!!!!!!!!");
                   Navigator.of(context).pushReplacement(MaterialPageRoute(builder: 
                   (context)=>HomePage()
                   ));
+                  }
+                  
                 }, 
                 child:Center(child: Text("Sign UP!",style: TextStyle(
                     color : Color.fromRGBO(15, 13, 9,1)
