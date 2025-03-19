@@ -88,39 +88,87 @@ class SelectExercise extends StatefulWidget {
 class _SelectExerciseState extends State<SelectExercise> {
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1,
-        ),
-
-        itemCount: 3,
-        itemBuilder: (context, index) => 
-         Container(
-          margin: EdgeInsets.fromLTRB(10, 10,10,0),
-          height: 100,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(colors: [
+     return  Column(
+          children: [
+            Container(
+            margin: EdgeInsets.fromLTRB(10, 10,10,0),
+            height: 200,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+                
+                    Color(0xFF00BFFF), // Pinkish color from the image 00BFFF
+                    Color(0xFFF5F5F5),
+              ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomLeft,
+                ),
+              // color: Colors.white,
+              borderRadius: BorderRadius.circular(15)),
+            child: TextButton(
+              onPressed: (){
+              },
+              style: ButtonStyle(splashFactory: NoSplash.splashFactory),
+              child: Text('\$'),),),
+                //////////
+              //////////
+              ///
+              //////
+              /////
+              ////
+              ////
+              ////
               
-                  Color(0xFF00BFFF), // Pinkish color from the image 00BFFF
-                  Color(0xFFF5F5F5),
-            ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomLeft,
-              ),
-            // color: Colors.white,
-            borderRadius: BorderRadius.circular(15)),
-          child: TextButton(
-            onPressed: (){
-              print("$index");
-            },
-            style: ButtonStyle(splashFactory: NoSplash.splashFactory),
-            child: Text('$index')),)
-
-        ,
-        
-        
-      ),
-    );
+              Container(
+            margin: EdgeInsets.fromLTRB(10, 10,10,0),
+            height: 200,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+                
+                    Color(0xFF00BFFF), // Pinkish color from the image 00BFFF
+                    Color(0xFFF5F5F5),
+              ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomLeft,
+                ),
+              // color: Colors.white,
+              borderRadius: BorderRadius.circular(15)),
+            child: TextButton(
+              onPressed: (){
+              },
+              style: ButtonStyle(splashFactory: NoSplash.splashFactory),
+              child: Text('\$'),),),
+              //////////
+              //////////
+              ///
+              //////
+              /////
+              ////
+              ////
+              ////
+              Container(
+            margin: EdgeInsets.fromLTRB(10, 10,10,0),
+            height: 200,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+                
+                    Color(0xFF00BFFF), // Pinkish color from the image 00BFFF
+                    Color(0xFFF5F5F5),
+              ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomLeft,
+                ),
+              // color: Colors.white,
+              borderRadius: BorderRadius.circular(15)),
+            child: TextButton(
+              onPressed: (){
+              },
+              style: ButtonStyle(splashFactory: NoSplash.splashFactory),
+              child: Text('\$'),),)
+              ]
+     );
   }
 }
 

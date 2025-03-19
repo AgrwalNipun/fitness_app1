@@ -48,26 +48,29 @@ class _HomePageState extends State<HomePage> {
 
       body: SafeArea
       (
-        child:Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Padding(
-              //   padding: const EdgeInsets.all(15.0),
-              //   child: Text("Your Macros : ",textAlign: TextAlign.left,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-              // ),
-              food_chart(),
-              Padding(
-                padding: const EdgeInsets.all(15.0),
-                child:Text("Let's Start Your Workout !",textAlign: TextAlign.left,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+        child:SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text("Your Macros : ",textAlign: TextAlign.left,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  ),
+                  food_chart(),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child:Text("Let's Start Your Workout !",textAlign: TextAlign.left,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  ),
+                  SelectExercise(),
+                  TextButton(onPressed: (){
+                    print(FirebaseAuth.instance.currentUser.toString());
+                  }, child: Text("HIt ME"))
+                ],
               ),
-              SelectExercise(),
-              TextButton(onPressed: (){
-                print(FirebaseAuth.instance.currentUser.toString());
-              }, child: Text("HIt ME"))
-            ],
-          )
+        ),
+        )
         
-      ),
+      
     );
   }
 }
