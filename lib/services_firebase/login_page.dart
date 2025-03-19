@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fitness_app/homepage.dart';
 import 'package:fitness_app/services_firebase/functions.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
             children: 
             [
               Expanded(
-                flex : 1,
+                flex : 2,
                 child: SizedBox(),),
             
               Icon(Icons.directions_walk,size: 40,color: Colors.white,),
@@ -39,14 +40,14 @@ class _LoginPageState extends State<LoginPage> {
               flex : 2,
               child: Column(
                 children: [
-                  Text("FITTR.",
+                  Text("FITTR",
                   style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,color: Colors.white),
                   ),
                   Text("Get Fitter\nEveryday",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.white),),
                 ],
               ),),
             Expanded(
-              flex:3,
+              flex:1,
               child:SizedBox()),
               Text("Sign UP or Log In to access FITTR.",style: TextStyle(color: Colors.white),), 
             
@@ -81,11 +82,14 @@ class _LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.circular(10)
               ),
               child: TextField(
+                showCursor: false,
                 style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
                 controller: passwordController,
                 decoration: InputDecoration(
                   border: InputBorder.none
                 ),
+                obscureText: true,
               )),
             SizedBox(
               height: 20,
@@ -102,6 +106,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
                   child :  TextButton(
                 onPressed: (){
+                  
                   if(emailController.text.isEmpty||passwordController.text.isEmpty){
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
@@ -110,12 +115,17 @@ class _LoginPageState extends State<LoginPage> {
                       )
                     );
                   }
+                  
                   else{
-                  signUpWithMAilAndPassword(emailController.text.trim(),passwordController.text.trim());
+                    // try{
+                    //   signInUser(emailController.text.trim(),passwordController.text.trim());
+                    // }catch(e){
+                    //   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.toString())));
+                    //   print(e);
+                    // }
+                    
+                      createUserWithMAilAndPassword(emailController.text.trim(),passwordController.text.trim());
                   print("!!!!!!!!!User added!!!!!!!!");
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: 
-                  (context)=>HomePage()
-                  ));
                   }
                   
                 }, 

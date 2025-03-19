@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:fitness_app/firebase_options.dart';
 import 'package:fitness_app/services_firebase/login_page.dart';
@@ -13,11 +14,11 @@ void main() async {
 SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarColor: Colors.transparent
     ));
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});  
+   MyApp({super.key});  
   @override 
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,7 +34,17 @@ class MyApp extends StatelessWidget {
         )
       
       ),
-      home: const LoginPage(),
+      home: StreamBuilder(stream: FirebaseAuth.instance.authStateChanges(),
+      builder:(context,snapshot){
+        if (snapshot.connectionState == ConnectionState.waiting) {
+              return const Center(child: CircularProgressIndicator());
+            }
+            if (snapshot.data != null) {
+              return const HomePage();
+            } else {
+              return const LoginPage();
+            }
+      })
     );
   }
 }

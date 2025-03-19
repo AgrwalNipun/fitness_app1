@@ -90,13 +90,14 @@ class _SelectExerciseState extends State<SelectExercise> {
   Widget build(BuildContext context) {
     return Expanded(
       child: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1,
         ),
 
-        itemCount: 10,
+        itemCount: 3,
         itemBuilder: (context, index) => 
          Container(
           margin: EdgeInsets.fromLTRB(10, 10,10,0),
+          height: 100,
           decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
               

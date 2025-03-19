@@ -1,9 +1,23 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
-void signUpWithMAilAndPassword( String mail, String password) async{
+void createUserWithMAilAndPassword( String mail, String password) async{
 
         dynamic inst = FirebaseAuth.instance;
-        
-        inst.createUserWithEmailAndPassword(email: mail, password: password);
+        if(FirebaseAuth.instance.currentUser ==null){
+        try {
+  inst.createUserWithEmailAndPassword(email: mail, password: password);
+} on Exception catch (e) {
+  print(e);
+  // TODO
+}
         print("Current user ${FirebaseAuth.instance.currentUser}");
+        }
+}
+void signInUser(String email,String password)async{
+try{
+      FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: password);}
+      catch(e){
+        print(e);
+      }
+        
 }
