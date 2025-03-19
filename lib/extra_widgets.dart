@@ -1,3 +1,6 @@
+import 'package:fitness_app/calisthenics.dart';
+import 'package:fitness_app/cardio.dart';
+import 'package:fitness_app/weight_training.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
@@ -107,9 +110,10 @@ class _SelectExerciseState extends State<SelectExercise> {
               borderRadius: BorderRadius.circular(15)),
             child: TextButton(
               onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>WeightTraining(),),);
               },
               style: ButtonStyle(splashFactory: NoSplash.splashFactory),
-              child: Text('\$'),),),
+              child: Text('Weight Training'),),),
                 //////////
               //////////
               ///
@@ -136,9 +140,11 @@ class _SelectExerciseState extends State<SelectExercise> {
               borderRadius: BorderRadius.circular(15)),
             child: TextButton(
               onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Cardio(),),);
+              
               },
               style: ButtonStyle(splashFactory: NoSplash.splashFactory),
-              child: Text('\$'),),),
+              child: Text('Cardio'),),),
               //////////
               //////////
               ///
@@ -164,9 +170,11 @@ class _SelectExerciseState extends State<SelectExercise> {
               borderRadius: BorderRadius.circular(15)),
             child: TextButton(
               onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Calisthenics(),),);
+              
               },
               style: ButtonStyle(splashFactory: NoSplash.splashFactory),
-              child: Text('\$'),),)
+              child: Text('Calisthenics'),),)
               ]
      );
   }

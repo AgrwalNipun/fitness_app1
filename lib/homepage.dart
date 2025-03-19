@@ -27,24 +27,7 @@ class _HomePageState extends State<HomePage> {
       unselectedItemColor:Colors.white,
       ),
 
-      appBar: AppBar(
-        backgroundColor: const Color(0xFFE0E0E0),
-        leading: Icon(Icons.directions_walk,size: 28,),
-        title: Text("Fittr",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-        elevation: 0,
-        actions: [IconButton(onPressed: () async{
-
-          try{
-            FirebaseAuth.instance.signOut();
-            // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>LoginPage() ));
-          }
-          catch(e){
-            print(e);
-          }
-        },
-         icon: Icon(Icons.exit_to_app))],
-      ),
-
+      appBar: defaultAppBar(),
 
       body: SafeArea
       (
@@ -74,3 +57,24 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+   AppBar defaultAppBar(){
+    return AppBar(
+        backgroundColor: const Color(0xFFE0E0E0),
+        leading: Icon(Icons.directions_walk,size: 28,),
+        title: Text("Fittr",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+        elevation: 0,
+        actions: [IconButton(onPressed: () async{
+
+          try{
+            FirebaseAuth.instance.signOut();
+            // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>LoginPage() ));
+          }
+          catch(e){
+            print(e);
+          }
+        },
+         icon: Icon(Icons.exit_to_app))],
+      );
+
+   }
