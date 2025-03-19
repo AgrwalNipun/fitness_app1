@@ -20,19 +20,32 @@ class _WeightTrainingState extends State<WeightTraining> {
         child: Column(
           children: [      
             Container(
-              decoration: BoxDecoration(
-                border: Border.all()
-              ),              
               height: MediaQuery.of(context).size.height -200 ,
-              child: Flexible(
-                child: ListView.builder(
-                  itemCount: bodyParts.length,
-                  itemBuilder: (context,index)=>
+              child: ListView.builder(
+                itemCount: bodyParts.length,
+                itemBuilder: (context,index)=>
+                  Container(
+                    height: 100,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      color: Color.fromARGB(255, 244, 198, 198)
+                    ),
+                    child: 
                     ListTile(
+                      // shape: CircleBorder(side: BorderSide(),eccentricity:0.6),
                       title: Text(bodyParts[index]),
-                    )
-                  ),
-              ),
+                      trailing: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Icon(Icons.navigate_next),
+                        ],
+                        
+                      ),
+                    ),
+                  )
+                ),
             )
         
           ],
