@@ -1,5 +1,5 @@
 import 'package:fitness_app/default_values.dart';
-import 'package:fitness_app/excersise_page.dart';
+import 'package:fitness_app/excersise_selector_page.dart';
 import 'package:fitness_app/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -46,7 +46,7 @@ class _WeightTrainingState extends State<WeightTraining> {
                           ),  
                           onPressed: () {
                             ref.read(bodyPartProvider.notifier).update((state)=>bodyParts[index]);
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>excercise()));
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>excerciseSelector()));
                           },
                           child :
                           

@@ -1,18 +1,21 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:fitness_app/excercise.dart';
 import 'package:fitness_app/homepage.dart';
 import 'package:fitness_app/weight_training.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class excercise extends StatefulWidget {
-  const excercise({super.key});
+final excerciseNameProvider = StateProvider((ref) => "",);
+
+class excerciseSelector extends StatefulWidget {
+  const excerciseSelector({super.key});
 
   @override
-  State<excercise> createState() => _excerciseState();
+  State<excerciseSelector> createState() => _excerciseSelectorState();
 }
 
-class _excerciseState extends State<excercise> {
+class _excerciseSelectorState extends State<excerciseSelector> {
   @override
   Widget build(BuildContext context) {
      return Scaffold(
@@ -38,7 +41,12 @@ class _excerciseState extends State<excercise> {
           else{
             return ListView.builder(
               itemCount: snapshot.data!.docs.length,
-              itemBuilder:(context,index)=> Text(snapshot.data!.docs[index].data()["Description"].toString()));
+              itemBuilder:(context,index)=> ElevatedButton(
+                onPressed: (){
+                  ref.read(excerciseNameProvider.notifier).update((state)=>"${snapshot.data!.docs[index].data()["Name"].toString()}");
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Excercise()));
+                },
+                child: Text(snapshot.data!.docs[index].data()["Name"].toString())));
           }
          }
          ),
