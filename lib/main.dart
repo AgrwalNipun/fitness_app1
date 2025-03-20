@@ -4,6 +4,7 @@ import 'package:fitness_app/firebase_options.dart';
 import 'package:fitness_app/services_firebase/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'homepage.dart';
 
 void main() async {
@@ -14,7 +15,7 @@ void main() async {
 SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarColor: Colors.transparent
     ));
-  runApp( MyApp());
+  runApp( ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
