@@ -1,6 +1,6 @@
-import 'package:fitness_app/calisthenics.dart';
-import 'package:fitness_app/cardio.dart';
-import 'package:fitness_app/weight_training.dart';
+import 'package:fitness_app/pages/calisthenics.dart';
+import 'package:fitness_app/pages/cardio.dart';
+import 'package:fitness_app/pages/weight_training.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';

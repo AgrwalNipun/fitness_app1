@@ -1,6 +1,6 @@
 import 'package:fitness_app/default_values.dart';
-import 'package:fitness_app/excersise_selector_page.dart';
-import 'package:fitness_app/homepage.dart';
+import 'package:fitness_app/pages/excersise_selector_page.dart';
+import 'package:fitness_app/pages/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

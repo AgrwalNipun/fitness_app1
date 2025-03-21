@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fitness_app/homepage.dart';
+import 'package:fitness_app/pages/homepage.dart';
 import 'package:fitness_app/services_firebase/functions.dart';
 import 'package:flutter/material.dart';
 
