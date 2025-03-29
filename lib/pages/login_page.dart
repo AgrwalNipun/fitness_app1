@@ -143,7 +143,7 @@ class _LoginPageState extends State<LoginPage> {
             ) ,
             Text("Already Signed Up? Log In.",style: TextStyle(color: Colors.white),),
             Expanded(
-              flex : 2,
+              flex : 4,
               child : SizedBox()
             ),
             ],
