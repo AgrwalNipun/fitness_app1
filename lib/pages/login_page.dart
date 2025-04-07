@@ -56,17 +56,19 @@ class _LoginPageState extends State<LoginPage> {
               child:SizedBox()),  
             Text("Enter Your Email",style: TextStyle(color: Colors.white),),
             Container(
-              width:MediaQuery.of(context).size.width/2,
+              width:MediaQuery.of(context).size.width/1.5,
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.white),
                 borderRadius: BorderRadius.circular(10)
               ),
             
               child: TextField(
+                
                 style: TextStyle(color: Colors.white),
                 controller: emailController,
                 cursorColor: Colors.white,
                 decoration: InputDecoration(
+                  contentPadding: EdgeInsets.symmetric(horizontal: 10),
                   border: InputBorder.none,
                 ),
 
@@ -76,10 +78,11 @@ class _LoginPageState extends State<LoginPage> {
             ) ,            
             Text("Enter Your Password",style: TextStyle(color: Colors.white),),
             Container(
-              width:MediaQuery.of(context).size.width/2,
+              width:MediaQuery.of(context).size.width/1.5,
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.white),
                 borderRadius: BorderRadius.circular(10)
+
               ),
               child: TextField(
                 showCursor: false,
@@ -87,6 +90,7 @@ class _LoginPageState extends State<LoginPage> {
                 textAlign: TextAlign.center,
                 controller: passwordController,
                 decoration: InputDecoration(
+                  contentPadding: EdgeInsets.symmetric(horizontal: 10),
                   border: InputBorder.none
                 ),
                 obscureText: true,
@@ -105,8 +109,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(20)
             ),
                   child :  TextButton(
-                onPressed: (){
-                  
+                onPressed: ()async {
                   if(emailController.text.isEmpty||passwordController.text.isEmpty){
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
@@ -115,18 +118,12 @@ class _LoginPageState extends State<LoginPage> {
                       )
                     );
                   }
+
+                 
                   
                   else{
-                    // try{
-                    //   signInUser(emailController.text.trim(),passwordController.text.trim());
-                    // }catch(e){
-                    //   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.toString())));
-                    //   print(e);
-                    // }
-                    
-                      createUserWithMAilAndPassword(emailController.text.trim(),passwordController.text.trim());
-                  print("!!!!!!!!!User added!!!!!!!!");
-                  }
+                    createUserWithMAilAndPassword(emailController.text.trim(),passwordController.text.trim());
+                          }
                   
                 }, 
                 child:Center(child: Text("Sign UP!",style: TextStyle(
