@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fitness_app/pages/extra_widgets.dart';
 import 'package:fitness_app/pages/login_page.dart';
+import 'package:fitness_app/pages/profile.dart';
 import 'package:fitness_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -12,27 +13,41 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<Widget> pages =[home(),Placeholder(),profilePage()];
+  Widget selectedPage = home();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: bgColor,
 
+
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Train'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Food Log'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Profile'),
         ],
         selectedItemColor: const Color.fromARGB(255, 186, 45, 45),
         unselectedItemColor: Colors.white,
+        onTap: (value){
+          setState(() {
+            selectedPage = pages[value];
+          });
+        },
       ),
 
       appBar: defaultAppBar(),
 
-      body: SafeArea(
+      body:selectedPage,
+      );
+  }
+}
+
+
+SafeArea home(){
+  return  SafeArea(
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,18 +70,12 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SelectExercise(),
-              TextButton(
-                onPressed: () {
-                  print(FirebaseAuth.instance.currentUser.toString());
-                },
-                child: Text("HIt ME"),
-              ),
+              
             ],
           ),
         ),
-      ),
-    );
-  }
+      );
+    
 }
 
 AppBar defaultAppBar() {

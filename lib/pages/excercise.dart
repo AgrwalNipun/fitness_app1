@@ -21,7 +21,7 @@ class _ExcerciseState extends State<Excercise> {
       Consumer(
         builder:(context, ref, child) =>
         FutureBuilder(
-          future: FirebaseFirestore.instance.collection("excersises_db").where("Target",isEqualTo:ref.read(bodyPartProvider)).get(),
+          future: FirebaseFirestore.instance.collection("exercise").where("Target",isEqualTo:ref.read(bodyPartProvider)).get(),
           builder: (context,snapshot){
             if(!snapshot.hasData){
               return Center(child : CircularProgressIndicator());
@@ -31,25 +31,36 @@ class _ExcerciseState extends State<Excercise> {
               children: [
                 Text(excerciseMap["Name"],style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 15),
                   child: Text(excerciseMap["Description"],style: TextStyle(fontSize: 16),),
                 ),
-
-                ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: (excerciseMap["Reps"] as List).length,
-                  itemBuilder: (context,index){
-                    return Container(
-                      padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
-                      decoration: BoxDecoration(
-                        border: Border.all(),
-                        borderRadius: BorderRadius.all(Radius.circular(5)),
+                Text("Set Up:",style: TextStyle(fontSize:20),),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 15),
+                  child: Text(excerciseMap["SetUp"],style: TextStyle(fontSize: 16),),
+                ),
+                Text("Reps:",style: TextStyle(fontSize:20),),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 15),
+                  child: Text(excerciseMap["Reps"],style: TextStyle(fontSize: 18),),
+                ),
                 
-                      ),
-                      child: Text((excerciseMap["Reps"] as List)[index].toString()));
-                  }),
-                Image.network(excerciseMap["Link"]),
+                // ListView.builder(
+                //   shrinkWrap: true,
+                //   itemCount: (excerciseMap["Reps"] as List).length,
+                //   itemBuilder: (context,index){
+                //     return Container(
+                //       padding: EdgeInsets.all(10),
+                //       margin: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
+                //       decoration: BoxDecoration(
+                //         border: Border.all(),
+                //         borderRadius: BorderRadius.all(Radius.circular(5)),
+                
+                //       ),
+                //       child: Text((excerciseMap["Reps"] as List)[index].toString()));
+                //   }),
+                
+                excerciseMap["Link"]!=null?Image.network(excerciseMap["Link"]):Text("No Image Found"),
               ],
             );
           }),

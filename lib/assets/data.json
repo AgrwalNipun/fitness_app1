@@ -1,0 +1,574 @@
+[
+  {
+    "Description": "Isometric neck strengthening exercises involve contracting the neck muscles without actual movement, which helps improve strength, stability, and endurance.",
+    "Difficulty": "Beginner",
+    "Link": "https://i.ibb.co/JW0TzXTC/Weighted-Neck-Harness-Extension.gif",
+    "Name": "Isometric Neck Strengthening",
+    "Reps": "Hold each contraction for 5-10 seconds; repeat three times",
+    "SetUp": "Sit upright in a chair. Place your palm on your forehead and press your head against your hand without allowing any movement. Hold the contraction, then relax.",
+    "Target": "Neck"
+  },
+  {
+    "Description": "The Neck Extension with Neck Harness is a resistance-based exercise designed to strengthen the muscles responsible for extending the neck.",
+    "Difficulty": "Intermediate",
+    "Link": "https://www.dmoose.com/cdn/shop/articles/1_68d5f8c2-0791-4a41-86db-e7f224b142ea.jpg?v=1649931793",
+    "Name": "Neck Extension with Neck Harness",
+    "Reps": "2-3 sets of 10-20 reps",
+    "SetUp": "Attach a neck harness to your head and connect it to a weight plate. Sit on a bench with your back straight. Slowly tilt your head backward against the resistance, then return to the starting position.",
+    "Target": "Neck"
+  },
+  {
+    "Description": "Neck Lateral Flexion is a strengthening exercise that targets the muscles on the sides of the neck. It helps improve neck stability, mobility, and muscle endurance, making it especially beneficial for athletes, wrestlers, and anyone looking to prevent neck injuries.",
+    "Difficulty": "Intermediate",
+    "Link": "https://fitnessprogramer.com/wp-content/uploads/2022/02/Lying-Weighted-Lateral-Neck-Flexion.gif",
+    "Name": "Neck Lateral Flexion",
+    "Reps": "2 sets of 10-20 reps on each side",
+    "SetUp": "Sit upright on a bench. Place your hand on the side of your head and apply gentle resistance. Slowly tilt your head toward your shoulder against the resistance, then return to the starting position.",
+    "Target": "Neck"
+  },
+  
+  {
+    "Description": "The barbell bench press is a fundamental compound movement that effectively targets the chest muscles, promoting overall upper body strength.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Barbell Bench Press",
+    "Reps": "3�4 sets of 8�12 reps",
+    "SetUp": "Lie flat on a bench with your feet firmly on the ground. Grip the barbell slightly wider than shoulder-width. Unrack the bar and lower it to your mid-chest, then press it back up to the starting position.",
+    "Target": "Chest"
+  },
+
+  {
+    "Description": "The incline dumbbell press emphasizes the upper portion of the chest, contributing to a well-rounded chest development.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Incline Dumbbell Press",
+    "Reps": "3�4 sets of 8�12 reps",
+    "SetUp": "Set an adjustable bench to a 30�45 degree incline. Sit on the bench with a dumbbell in each hand, resting on your thighs. Lie back and position the dumbbells at shoulder height with palms facing forward. Press the dumbbells upward until your arms are fully extended, then lower them back to the starting position.",
+    "Target": "Chest"
+  },
+
+  {
+    "Description": "Chest dips are a bodyweight exercise that effectively targets the lower chest and triceps, enhancing muscle definition and strength.",
+    "Difficulty": "Advanced",
+   
+    "Name": "Chest Dips",
+    "Reps": "3 sets of 8�12 reps",
+    "SetUp": "Use parallel bars and lift yourself to the starting position with arms locked. Lean your torso forward slightly to engage the chest muscles. Lower your body until your upper arms are parallel to the ground, then push back up to the starting position.",
+    "Target": "Chest"
+  },
+
+  {
+    "Description": "Push-ups are a versatile bodyweight exercise that strengthens the chest, shoulders, and triceps, and can be modified to increase or decrease difficulty.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Push-Up",
+    "Reps": "3 sets of 12�15 reps?",
+    "SetUp": "Start in a plank position with hands placed slightly wider than shoulder-width. Lower your body until your chest nearly touches the floor, keeping your elbows at a 45-degree angle. Push through your palms to return to the starting position.",
+    "Target": "Chest"
+  },
+
+  {
+    "Description": "The cable crossover effectively isolates the chest muscles, providing constant tension throughout the movement for enhanced muscle engagement.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Cable Crossover",
+    "Reps": "3 sets of 10�12 reps",
+    "SetUp": "Stand in the center of a cable machine with pulleys set to the highest position. Grasp the handles with palms facing down and step forward to create tension. With a slight bend in your elbows, bring your hands together in front of you in a wide arc, then slowly return to the starting position.?",
+    "Target": "Chest"
+  },
+  
+  {
+    "Description": "Incline dumbbell flyes target the upper chest, enhancing muscle definition and flexibility through a full range of motion.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Incline Dumbbell Flye",
+    "Reps": "3 sets of 10�12 reps",
+    "SetUp": "Set an adjustable bench to a 30�45 degree incline. Lie back with a dumbbell in each hand, palms facing each other. Extend your arms above your chest with a slight bend in the elbows. Lower the dumbbells in a wide arc until you feel a stretch in your chest, then bring them back together over your chest.",
+    "Target": "Chest"
+  },
+  
+  {
+    "Description": "A total-body compound movement that builds strength and mass in the entire posterior chain, especially the lower and mid-back.",
+    "Difficulty": "Advanced",
+   
+    "Name": "Barbell Deadlift",
+    "Reps": "3�4 sets of 6�8 reps",
+    "SetUp": "Load a barbell on the ground. Stand with feet shoulder-width apart, grip the bar just outside your knees, keep your back straight, and drive through your heels to lift.",
+    "Target": "Back"
+   
+  },
+
+  {
+    "Description": "A classic bodyweight move that increases width and strength in your upper back and lats.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Pull-Ups",
+    "Reps": "3 sets of 8�12 reps",
+    "SetUp": "Grab a pull-up bar with an overhand grip, hands shoulder-width apart. Hang fully extended, then pull your chest up to the bar.",
+    "Target": "Back"
+   
+  },
+  
+  {
+    "Description": "A powerful mid-back builder that improves thickness and posture when done correctly.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Bent-Over Barbell Row",
+    "Reps": "3�4 sets of 10�12 reps",
+    "SetUp": "Hold a barbell with an overhand grip, bend forward at your hips with a straight back, and row the barbell to your lower chest.",
+    "Target": "Back"
+   
+  },
+ 
+  {
+    "Description": "A machine-based movement that targets the back in a controlled and safe way, great for isolating and building detail.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Seated Cable Row",
+    "Reps": "3 sets of 12�15 reps",
+    "SetUp": "Sit at a cable row station with feet against the platform. Grab the handle, keep your back straight, and row toward your waist.",
+    "Target": "Back"
+   
+  },
+
+  {
+    "Description": "Excellent for building back thickness and engaging multiple back muscles simultaneously.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "T-Bar Row",
+    "Reps": "3�4 sets of 8�10 reps",
+    "SetUp": "Stand over a T-bar row machine, grab the handles, keep your chest supported (or bend over if unsupported), and row the weight toward your torso.",
+    "Target": "Back"
+   
+  },
+  
+  {
+    "Description": "A controlled alternative to pull-ups, especially good for beginners looking to widen their back.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Lat Pulldown",
+    "Reps": "3 sets of 10�12 reps",
+    "SetUp": "Sit at a lat pulldown machine, grip the bar wider than shoulder-width, pull it down in front of you to the upper chest, and control it on the way up.",
+    "Target": "Back"
+   
+  },
+  
+  {
+    "Description": "One of the most classic and effective biceps movements to build mass and strength in the upper arms. Great for progressive overload.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Barbell Bicep Curl",
+    "Reps": "3�4 sets of 10�12 reps",
+    "SetUp": "Stand tall with feet shoulder-width apart. Hold a barbell with an underhand grip, arms extended. Curl the barbell up toward your shoulders, squeezing your biceps at the top, and slowly lower back.",
+    "Target": "Biceps"
+   
+  },
+ 
+  {
+    "Description": "A great variation to add arm thickness and strengthen the forearms. Also helps with elbow stability.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Dumbbell Hammer Curl",
+    "Reps": "3 sets of 12�15 reps",
+    "SetUp": "Hold a dumbbell in each hand with a neutral grip (palms facing inward). Keep your elbows close to your body and curl the dumbbells up. Slowly lower them back down.",
+    "Target": "Biceps"
+   
+  },
+
+  {
+    "Description": "This isolation movement helps build the bicep peak and provides a strong mind-muscle connection. Great for shaping and definition.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Concentration Curl",
+    "Reps": "3 sets of 10�12 reps (each arm)",
+    "SetUp": "Sit on a bench with your knees apart. Hold a dumbbell in one hand, rest your elbow on the inside of your thigh, and curl the weight toward your shoulder with control.",
+    "Target": "Biceps"   
+  },
+
+  {
+    "Description": "A controlled and effective isolation movement ideal for beginners and advanced lifters. Great for shaping the outer triceps and improving arm definition.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Triceps Pushdown (Cable)",
+    "Reps": "3�4 sets of 12�15 reps",
+    "SetUp": "Stand facing a cable machine with a straight or rope attachment. Grip the bar with palms facing down, elbows tucked to your sides. Push the bar down until your arms are fully extended, then return with control.",
+    "Target": "Triceps"
+  },
+
+  {
+    "Description": "This movement emphasizes the long head of the triceps, helping build bigger, fuller arms and improving overhead pressing strengt",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Overhead Dumbbell Triceps Extension",
+    "Reps": "3 sets of 10�12 reps",
+    "SetUp": "Sit on a bench with back support. Hold one dumbbell with both hands overhead, arms fully extended. Lower the dumbbell behind your head, then press it back up while keeping elbows stable.",
+    "Target": "Triceps"
+   
+  },
+
+  {
+    "Description": "A powerful compound lift that targets the triceps while also engaging the chest and front delts. Ideal for strength and muscle mass in the arms.",
+    "Difficulty": "Advanced",
+   
+    "Name": "Close-Grip Barbell Bench Press",
+    "Reps": "3�4 sets of 6�10 reps",
+    "SetUp": "Lie flat on a bench, grip the barbell just inside shoulder-width. Lower the bar to your chest, keeping elbows tucked, then press back up.",
+    "Target": "Triceps"   
+  },
+ 
+  {
+    "Description": "A foundational movement for forearm development, this isolates the flexor muscles responsible for gripping and curling motions.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Wrist Curls (Barbell or Dumbbell)",
+    "Reps": "3�4 sets of 12�15 reps",
+    "SetUp": "Sit on a bench with your forearms resting on your thighs, palms up, holding a barbell or dumbbells. Let the weights roll down to your fingers, then curl your wrists upward.",
+    "Target": "Forearms"
+   
+  },
+ 
+  {
+    "Description": "Great for balancing the forearm by targeting the extensors, which are often neglected and important for joint health and symmetry.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Reverse Wrist Curls",
+    "Reps": "3 sets of 12�15 reps",
+    "SetUp": "Sit on a bench, rest your forearms on your thighs or a bench, palms facing down. Hold a light barbell or dumbbells and curl your wrists upward, then lower with control.",
+    "Target": "Forearms"
+   
+  },
+
+  {
+    "Description": "An excellent full-body strength and conditioning move that specifically taxes your grip and forearms, helping build real-world arm and hand strength.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Farmer�s Walk",
+    "Reps": "3 sets of 30�45 seconds walks (or 20�30 meters)",
+    "SetUp": "Grab a pair of heavy dumbbells or farmer�s walk handles. Stand tall, brace your core, and walk for distance or time while keeping good posture.",
+    "Target": "Forearms"
+   
+  },
+
+  {
+    "Description": "A fundamental compound movement that builds lower body strength, size, and overall athletic performance.",
+    "Difficulty": "Intermediate to Advanced",
+   
+    "Name": "Barbell Back Squat",
+    "Reps": "3�5 sets of 6�10 reps",
+    "SetUp": "Place a barbell on your upper traps, stand shoulder-width apart, keep your core tight, and lower into a squat until your thighs are parallel or deeper. Push through your heels to stand.",
+    "Target": "Legs"
+  
+  },
+
+  {
+    "Description": "This hip-hinge movement emphasizes hamstring and glute development while improving posterior chain strength.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Romanian Deadlift (RDL)",
+    "Reps": "3�4 sets of 8�12 reps",
+    "SetUp": "Hold a barbell or dumbbells in front of you, feet hip-width apart. Hinge at the hips with a slight bend in the knees, lowering the weight down your legs, then return upright.",
+    "Target": "Legs"
+   
+  },
+
+  {
+    "Description": "A great unilateral leg movement that enhances balance, coordination, and leg symmetry.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Walking Lunges",
+    "Reps": "3 sets of 10�12 reps per leg",
+    "SetUp": "Hold a dumbbell in each hand, step forward with one leg, lower into a lunge, and push forward into the next step.",
+    "Target": "Legs"
+   
+  },
+
+  {
+    "Description": "A challenging single-leg squat that builds strength and stability in the legs and glutes, with a strong core demand.",
+    "Difficulty": "Advanced",
+   
+    "Name": "Bulgarian Split Squat",
+    "Reps": "3 sets of 8�10 reps per leg",
+    "SetUp": "Stand a couple of feet in front of a bench. Place one foot behind you on the bench and squat down with the front leg",
+    "Target": "Legs"
+   
+  },
+
+  {
+    "Description": "A safe, machine-based movement to overload the legs without stressing the spine.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Leg Press",
+    "Reps": "3�4 sets of 10�15 reps",
+    "SetUp": "Sit in the leg press machine, place feet shoulder-width on the platform. Lower the platform to 90�, then press it back up.",
+    "Target": "Legs"
+   
+  },
+
+  {
+    "Description": "An isolation movement to directly target and strengthen the hamstrings safely and effectively.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Seated Leg Curl (Machine)",
+    "Reps": "3 sets of 12�15 reps",
+    "SetUp": "Sit in the machine with legs extended. Hook the pad behind your ankles and curl your legs downward.",
+    "Target": "Legs"
+   
+  },
+
+  {
+    "Description": "An isolation exercise focused on strengthening and shaping the front of your thighs.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Leg Extension (Machine)",
+    "Reps": "3 sets of 12�15 reps",
+    "SetUp": "Sit in the leg extension machine with the pad in front of your ankles. Extend your legs to full lockout, then lower with control.",
+    "Target": "Legs"
+   
+  },
+
+  {
+    "Description": "Essential for building strong, defined calves and improving ankle strength and stability.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Standing Calf Raise",
+    "Reps": "3�4 sets of 15�20 reps",
+    "SetUp": "Stand on a calf raise machine or step with the balls of your feet. Raise your heels as high as possible, squeeze, and slowly lower down.",
+    "Target": "Legs"
+   
+  },
+
+  {
+    "Description": "A powerful movement for building lower ab strength and improving grip and core control. Keep movements slow and controlled for max benefit.",
+    "Difficulty": "Intermediate to Advanced",
+   
+    "Name": "Hanging Leg Raise",
+    "Reps": "3�4 sets of 10�15 reps",
+    "SetUp": "Hang from a pull-up bar with your arms extended and legs straight. Engage your core and raise your legs to at least hip level or higher, then lower with control.",
+    "Target": "Abs"
+   
+  },
+
+  {
+    "Description": "A resistance-based ab exercise that allows progressive overload, helping you build thicker, stronger ab muscles.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Cable Crunch",
+    "Reps": "3�4 sets of 15�20 reps",
+    "SetUp": "Kneel in front of a high pulley with a rope attachment. Hold the rope by your head, crunch forward using your abs, and slowly return to start.",
+    "Target": "Abs"
+   
+  },
+
+  {
+    "Description": "A dynamic rotational core move that targets the sides of the abs and improves stability and balance.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Russian Twist (with or without weight)",
+    "Reps": "3 sets of 20�30 total twists (10�15 each side)",
+    "SetUp": "Sit on the floor with your knees bent, feet slightly elevated or on the floor. Hold a weight or medicine ball, lean back slightly, and twist side-to-side.",
+    "Target": "Abs"
+   
+  },
+
+  {
+    "Description": "A foundational isometric exercise for core endurance and stability. Great for building functional core strength without movement.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Plank",
+    "Reps": "3 sets of 30�60 seconds hold",
+    "SetUp": "Lie face down and lift your body on your elbows and toes, forming a straight line from head to heels. Keep your core tight and hips stable.",
+    "Target": "Abs"
+   
+  },
+
+  {
+    "Description": "A foundational upper-body exercise to build strength, endurance, and muscular control.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Push-Ups",
+    "Reps": "3�4 sets of 12�20 reps",
+    "SetUp": "Start in a plank position, hands shoulder-width apart. Lower your body until your chest nearly touches the ground, then push back up.",
+    "Target": "Calisthenics"
+   
+  },
+
+  {
+    "Description": "A core calisthenics move for building upper body pulling strength and width in the back.",
+    "Difficulty": "Intermediate to Advanced",
+   
+    "Name": "Pull-Ups",
+    "Reps": "3�4 sets of 6�12 reps",
+    "SetUp": "Grab a pull-up bar with a shoulder-width overhand grip. Hang fully, then pull your chin above the bar, and lower down slowly.",
+    "Target": "Calisthenics"
+   
+  },
+
+  {
+    "Description": "One of the best bodyweight exercises for upper-body pushing strength and triceps hypertrophy.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Dips",
+    "Reps": "3�4 sets of 8�15 reps",
+    "SetUp": "Use parallel bars or a bench. Lower your body until elbows are 90�, then press back up using your triceps.",
+    "Target": "Calisthenics"
+   
+  },
+
+  {
+    "Description": "A basic but highly effective lower-body movement to build strength, mobility, and endurance.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Bodyweight Squats",
+    "Reps": "3�5 sets of 15�25 reps",
+    "SetUp": "Stand with feet shoulder-width apart. Lower your hips back and down until thighs are parallel, then stand up.",
+    "Target": "Calisthenics"
+   
+  },
+
+  {
+    "Description": "A great calisthenics variation to build overhead pressing strength and shoulder stability.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Pike Push-Ups",
+    "Reps": "3 sets of 8�12 reps",
+    "SetUp": "Start in a downward dog position. Bend your elbows to lower your head toward the floor, then press up.",
+    "Target": "Calisthenics"
+   
+  },
+
+  {
+    "Description": "Builds dynamic core strength, stability, and upper body endurance in one fluid motion.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Plank to Push-Up (Up-Downs)",
+    "Reps": "3 sets of 12�16 reps",
+    "SetUp": "Start in a forearm plank, then push up to your hands one arm at a time, then return.",
+    "Target": "Calisthenics"
+   
+  },
+
+  {
+    "Description": "A powerful isometric exercise that builds static strength, control, and stability.",
+    "Difficulty": "Advanced",
+   
+    "Name": "L-Sit Hold",
+    "Reps": "3 sets of 10�30 second holds",
+    "SetUp": "Sit on the ground or on parallettes. Press down with your hands and lift your legs off the floor, keeping them straight in front of you.",
+    "Target": "Calisthenics"
+   
+  },
+
+  {
+    "Description": "A killer static hold that builds muscular endurance and mental toughness in your legs.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Wall Sit",
+    "Reps": "3 sets of 30�60 seconds hold",
+    "SetUp": "Lean against a wall with your knees bent at 90�, thighs parallel to the floor. Hold the position.",
+    "Target": "Calisthenics"
+   
+  },
+
+  {
+    "Description": "A classic compound lift that builds pressing power and adds serious mass to the shoulders.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Overhead Barbell Press (Standing or Seated)",
+    "Reps": "3�4 sets of 6�10 reps",
+    "SetUp": "Hold a barbell at shoulder level with hands slightly wider than shoulder-width. Press the bar overhead until arms are fully extended, then lower slowly.",
+    "Target": "Shoulder"
+   
+  },
+
+  {
+    "Description": "Perfect for targeting the side delts and giving your shoulders that wide, rounded look.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Dumbbell Lateral Raise",
+    "Reps": "3�4 sets of 12�15 reps",
+    "SetUp": "Stand or sit with dumbbells at your sides, palms in. Raise arms out to the sides until shoulder level, then lower with control.",
+    "Target": "Shoulder"
+   
+  },
+
+  {
+    "Description": "Isolates the front shoulder head, great for improving shoulder definition and balance.",
+    "Difficulty": "Beginner",
+   
+    "Name": "Dumbbell Front Raise",
+    "Reps": "3 sets of 10�12 reps",
+    "SetUp": "Hold dumbbells in front of your thighs with palms facing you. Lift one or both arms straight in front to shoulder height, then lower.",
+    "Target": "Shoulder"
+   
+  },
+
+  {
+    "Description": "Strengthens the rear delts and upper back, helping improve posture and shoulder balance.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Rear Delt Fly",
+    "Reps": "3 sets of 12�15 reps",
+    "SetUp": "Hinge at the hips with dumbbells in hand or sit on a reverse pec deck machine. Raise arms outward in a wide arc until level with shoulders, then lower.",
+    "Target": "Shoulder"
+   
+  },
+
+  {
+    "Description": "A shoulder variation named after Arnold Schwarzenegger that works the entire shoulder complex through a greater range of motion.",
+    "Difficulty": "Intermediate",
+   
+    "Name": "Arnold Press",
+    "Reps": "3 sets of 8�12 reps",
+    "SetUp": "Sit or stand with dumbbells in front of your shoulders, palms facing you. Rotate palms out as you press the dumbbells overhead, then reverse the movement.",
+    "Target": "Shoulder"
+   
+  },
+
+  {
+    "Description": "Excellent for shoulder health, posture correction, and upper back activation. Often used as a prehab or finisher movement.",
+    "Difficulty": "Beginner to Intermediate",
+   
+    "Name": "Face Pulls",
+    "Reps": "3 sets of 12�15 reps",
+    "SetUp": "Set a rope attachment at upper chest level on a cable machine. Pull the rope toward your face, elbows high and wide, squeezing your upper back.",
+    "Target": "Shoulder"
+   
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+   
+   
+   
+   
+   
+   
+   
+   
+  }
+]
